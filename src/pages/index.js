@@ -1,9 +1,12 @@
 import * as React from "react"
 import Layout from "../components/layout"
+import { StaticImage } from "gatsby-plugin-image"
 
 const IndexPage = () => {
   return (
     <Layout title="Suneater's Entertainment and Rentals">
+      <StaticImage src="../images/suneaters-rentals.jpg"
+        alt="The crew of Suneater's Entertainment and Rentals" />
       <p1>
         It's a new day. It's my time to shine! It's time to take my career
         into my own hands. I've saved money my whole life. Great! Now it's
