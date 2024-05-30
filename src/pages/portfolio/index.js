@@ -10,7 +10,7 @@ const PortfolioPage = ({ data }) => {
       {
         data.allMdx.nodes.map(node => (
           <article key={node.id}>
-            <h2><Link to={`portfolio/${node.frontmatter.slug}`}>{node.frontmatter.title}</Link></h2>
+            <h2><Link to={node.frontmatter.slug}>{node.frontmatter.title}</Link></h2>
             <p>Performed on {node.frontmatter.date}</p>
             <p>{node.excerpt}</p>
           </article>
